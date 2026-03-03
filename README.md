@@ -215,9 +215,6 @@ Setup cost logs
 
 HumanEval benchmark (164 tasks):
 
-Official source:
-https://github.com/openai/human-eval
-
 Runnable Python modules included in: HumanEval_Code_Test_Dataset/
 
 Each problem includes:
