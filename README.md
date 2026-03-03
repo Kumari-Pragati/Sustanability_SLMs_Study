@@ -17,7 +17,7 @@ We evaluate:
 • Multiple runs per prompt  
 • 8-bit baseline + 4-bit + Full precision comparisons  
 • Energy, Carbon Emission, Runtime, Coverage  
-• Sustainability metrics (SCI, SCI_NORM, Time_NORM, SBI/ECO, SVI)
+• Sustainability metrics
 
 Benchmark:
 HumanEval dataset (164 Python programming tasks)
@@ -60,9 +60,9 @@ Sustainability_SLMs_Study/
 │   ├── Qwen 8bit/
 │   └── coverage_report_*.txt
 │
-├── Master_Sheet_For_All_Metrics_Calculation.xlsx
-│
 ├── Anthropic_Prompt_Structure_Image.png
+│
+├── Master_Sheet_For_All_Metrics_Calculation.xlsx
 │
 └── README.md
 ```
@@ -98,7 +98,6 @@ Prompt design follows Anthropic structured prompting principles.
 
 All experiments are controlled via: Code_File/Llama_model.ipynb
 
-
 This notebook implements the complete experimental pipeline for:
 
 - Loading Small Language Models (SLMs)
@@ -115,8 +114,8 @@ This notebook implements the complete experimental pipeline for:
 Each execution of the notebook performs the following steps:
 
 1. Install required dependencies
-2. Mount Google Drive (if using Colab)
-3. Load HumanEval dataset modules
+2. Mount Google Drive  just for saving the results(if using Colab)
+3. Load HumanEval dataset 
 4. Authenticate HuggingFace (for gated models)
 5. Load selected SLM model
 6. Apply selected prompt variant (APV0–APV3)
@@ -140,20 +139,14 @@ MODEL_TAG = "ModelLabel"
 
 **No other change in the pipeline is required.**
 
-Supported models:
+SLM models used for this experiment:
 
 deepseek-coder-7b-instruct-v1.5
-
 Meta-Llama-3-8B-Instruct
-
 Mistral-7B-Instruct
-
 Phi-3.5-mini
-
 Qwen2.5-1.5B-Instruct
 
-
-# 📂 Repository Structure
 🧠 Prompt Selection
 
 Each prompt block defines:
@@ -163,31 +156,25 @@ PROMPT_NAME = "APV0"
 Available prompt variants:
 
 APV0
-
 APV1
-
 APV2
-
 APV3
 
-Prompt PDFs are stored in:
+Prompt PDFs are stored in:Prompts/
 
-Prompts/
 🔁 Run Configuration
 
 Current setup:
 
 APV0 → RUNS = 3
-
 APV1 → RUNS = 1
-
 APV2 → RUNS = 1
-
 APV3 → RUNS = 1
 
 This can be modified by updating:
 
 RUNS = X
+
 ⚡ Quantization Settings
 Default (8-bit Baseline)
 load_in_8bit=True
@@ -200,9 +187,8 @@ bnb_4bit_quant_type="nf4"
 bnb_4bit_use_double_quant=True
 Full Precision (No Quantization)
 
-Remove quantization configuration entirely:
+Remove quantization configuration entirely: AutoModelForCausalLM.from_pretrained(MODEL_ID)
 
-AutoModelForCausalLM.from_pretrained(MODEL_ID)
 📊 Output Directory Structure
 
 Results are saved as:
@@ -220,11 +206,8 @@ Generated results emission and test scripts/
 Each run folder contains:
 
 Generated unit tests
-
 CodeCarbon emission logs
-
 Runtime tracking
-
 Setup cost logs
 
 🧪 Dataset
@@ -234,17 +217,12 @@ HumanEval benchmark (164 tasks):
 Official source:
 https://github.com/openai/human-eval
 
-Runnable Python modules included in:
-
-HumanEval_Code_Test_Dataset/
+Runnable Python modules included in: HumanEval_Code_Test_Dataset/
 
 Each problem includes:
 
 HumanEval_i_code.py
-
 HumanEval_i_test.py
-
-
 ---
 
 # 🔹Master Excel Sheet Explanation 
@@ -253,7 +231,6 @@ HumanEval_i_test.py
 # 📊 Master Excel Sheet Explanation
 
 All sustainability metrics used in the paper are computed in:
-
 
 This Excel file ensures full transparency and reproducibility of metric calculations.
 
@@ -283,7 +260,7 @@ Min–max normalization of SCI across runs.
 ### 3️⃣ Time_NORM
 Min–max normalization of runtime.
 
-### 4️⃣ SBI_ECO
+### 4️⃣ ECO
 Eco-efficiency score combining normalized SCI and coverage.
 
 ### 5️⃣ SVI
@@ -314,9 +291,9 @@ This sheet ensures:
 
 ---
 
-# 📄 Sheet 3 — Coverage Comparison
+# 📄 Sheet 3 — Grid Intensity Reference
 
-This sheet provides:
+Coverage Comparison- This sheet provides:
 
 - Coverage comparison across models
 - Coverage comparison across APV0–APV3
@@ -328,11 +305,7 @@ This allows direct evaluation of:
 - Prompt effectiveness
 - Quantization impact on coverage
 
----
-
-# 📄 Sheet 4 — Grid Intensity Reference
-
-Contains:
+Also contains:
 
 - Region names
 - Grid power intensity values
@@ -346,7 +319,7 @@ This ensures that carbon intensity values are explicitly documented.
 
 All sustainability conclusions in the paper are derived from:
 
-- Raw CodeCarbon outputs
+- CodeCarbon outputs
 - Coverage results
 - Runtime logs
 
@@ -357,5 +330,5 @@ The Excel sheet:
 - Computes composite sustainability metrics
 - Enables transparent verification
 
-Anyone can recompute SCI, SCI_NORM, SBI_ECO, and SVI using the provided values.
+Anyone can recompute the values using the provided metrics.
 
