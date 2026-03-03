@@ -244,9 +244,115 @@ HumanEval_i_test.py
 
 ---
 
-# 🔹 Master Excel Sheet Explanation 
+# 🔹Master Excel Sheet Explanation 
 
 ```markdown
 # 📊 Master Excel Sheet Explanation
 
 All sustainability metrics used in the paper are computed in:
+
+
+This Excel file ensures full transparency and reproducibility of metric calculations.
+
+It contains structured sheets as described below.
+
+---
+
+# 📄 Sheet 1 — Master Sheet
+
+This is the main computation sheet.
+
+It aggregates raw and averaged values for:
+
+- Carbon Emission (gCO₂eq)
+- Energy Consumption (kWh)
+- Coverage (%) — used as quality metric
+- Time Duration (seconds)
+
+From these raw metrics, the following are calculated:
+
+### 1️⃣ SCI (Software Carbon Intensity)
+Carbon emission adjusted for grid intensity.
+
+### 2️⃣ SCI_NORM
+Min–max normalization of SCI across runs.
+
+### 3️⃣ Time_NORM
+Min–max normalization of runtime.
+
+### 4️⃣ SBI_ECO
+Eco-efficiency score combining normalized SCI and coverage.
+
+### 5️⃣ SVI
+Sustainability metric combining:
+- SCI_NORM
+- Time_NORM
+
+All normalization and composite metrics are computed directly within this sheet.
+
+---
+
+# 📄 Sheet 2 — SCI (Region-Sensitive Analysis)
+
+This sheet includes:
+
+- country_iso_code (region of execution)
+- Grid carbon intensity
+- Per-run SCI values
+- Region-dependent sustainability comparison
+
+Since Google Colab may migrate execution to different data centers, grid intensity varies.
+
+This sheet ensures:
+
+- Region-aware transparency
+- Fair sustainability comparison
+- Reproducibility of carbon intensity adjustments
+
+---
+
+# 📄 Sheet 3 — Coverage Comparison
+
+This sheet provides:
+
+- Coverage comparison across models
+- Coverage comparison across APV0–APV3
+- Quantization comparison (8bit vs 4bit vs noQuant)
+
+This allows direct evaluation of:
+
+- Quality retention
+- Prompt effectiveness
+- Quantization impact on coverage
+
+---
+
+# 📄 Sheet 4 — Grid Intensity Reference
+
+Contains:
+
+- Region names
+- Grid power intensity values
+- Used for SCI computation
+
+This ensures that carbon intensity values are explicitly documented.
+
+---
+
+# 🔎 Why This Excel Sheet Is Important
+
+All sustainability conclusions in the paper are derived from:
+
+- Raw CodeCarbon outputs
+- Coverage results
+- Runtime logs
+
+The Excel sheet:
+
+- Aggregates all runs
+- Performs normalization
+- Computes composite sustainability metrics
+- Enables transparent verification
+
+Anyone can recompute SCI, SCI_NORM, SBI_ECO, and SVI using the provided values.
+
