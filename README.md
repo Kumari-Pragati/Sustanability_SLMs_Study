@@ -26,43 +26,46 @@ Official HumanEval repository:
 https://github.com/openai/human-eval
 
 ---
+## 📂 Repository Structure
+
+```text
 Sustainability_SLMs_Study/
 │
 ├── Code_File/
-│ └── Llama_model.ipynb
+│   └── Llama_model.ipynb
 │
 ├── Generated results emission and test scripts/
-│ ├── Llama/
-│ ├── Mistral/
-│ ├── Phi/
-│ ├── Qwen/
-│ └── Deepseek/
+│   ├── Llama/
+│   ├── Mistral/
+│   ├── Phi/
+│   ├── Qwen/
+│   └── Deepseek/
 │
 ├── HumanEval_Code_Test_Dataset/
-│ ├── HumanEval_0_code.py
-│ ├── HumanEval_0_test.py
-│ ├── ...
+│   ├── HumanEval_0_code.py
+│   ├── HumanEval_0_test.py
+│   └── ...
 │
 ├── Prompts/
-│ ├── APV0.pdf
-│ ├── APV1.pdf
-│ ├── APV2.pdf
-│ └── APV3.pdf
+│   ├── APV0.pdf
+│   ├── APV1.pdf
+│   ├── APV2.pdf
+│   └── APV3.pdf
 │
 ├── Test Coverage/
-│ ├── Deepseek 8bit/
-│ ├── Llama 8bit/
-│ ├── Mistral 8bit/
-│ ├── Phi 8bit/
-│ ├── Qwen 8bit/
-│ ├── coverage_report_*.txt
+│   ├── Deepseek 8bit/
+│   ├── Llama 8bit/
+│   ├── Mistral 8bit/
+│   ├── Phi 8bit/
+│   ├── Qwen 8bit/
+│   └── coverage_report_*.txt
 │
 ├── Master_Sheet_For_All_Metrics_Calculation.xlsx
 │
 ├── Anthropic_Prompt_Structure_Image.png
 │
 └── README.md
-
+```
 
 ---
 
