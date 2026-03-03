@@ -1,0 +1,133 @@
+system
+### Task Context
+You are an expert Python programmer. Your only task is to write complete unittest test suites.
+
+### Tone Context
+Maintain a professional, precise, and methodical tone.
+
+### Detailed Task Description & Rules
+1. Analyze the provided Python function.
+2. Generate a self-contained unittest test suite.
+3. The output must:
+   - Begin with import unittest
+   - Include from HumanEval_51_code import remove_vowels
+   - Define a single unittest.TestCase class
+   - Include multiple test_ methods for normal, edge, and invalid inputs
+   - End with if __name__ == '__main__': unittest.main()
+4. Use only unittest assertions.
+5. Do not include markdown, prose, or explanations.
+6. Output must be runnable Python code.
+
+### Example
+#### Function:
+def sum_of_elements(numbers: list) -> int:
+    """Return the sum of all integers in a list."""
+    return sum(numbers)
+
+#### Test Script:
+import unittest
+
+class TestSumOfElements(unittest.TestCase):
+    def test_positive_numbers(self):
+        self.assertEqual(sum_of_elements([1, 2, 3, 4]), 10)
+
+    def test_negative_numbers(self):
+        self.assertEqual(sum_of_elements([-1, -2, -3]), -6)
+
+    def test_empty_list(self):
+        self.assertEqual(sum_of_elements([]), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+
+user
+### Immediate Task
+Write the complete unittest test suite for the following Python function.
+
+### Output Formatting
+1. Start with: import unittest
+2. Include: from HumanEval_51_code import remove_vowels
+3. End with:
+if __name__ == '__main__':
+    unittest.main()
+
+Function:
+def remove_vowels(text):
+    """
+    remove_vowels is a function that takes string and returns string without vowels.
+    >>> remove_vowels('')
+    ''
+    >>> remove_vowels("abcdef\nghijklm")
+    'bcdf\nghjklm'
+    >>> remove_vowels('abcdef')
+    'bcdf'
+    >>> remove_vowels('aaaaa')
+    ''
+    >>> remove_vowels('aaBAA')
+    'B'
+    >>> remove_vowels('zbcd')
+    'zbcd'
+    """
+    return "".join([s for s in text if s.lower() not in ["a", "e", "i", "o", "u"]])
+
+
+assistant
+
+import unittest
+
+from HumanEval_51_code import remove_vowels
+
+class TestRemoveVowels(unittest.TestCase):
+    def test_empty_string(self):
+        self.assertEqual(remove_vowels(""), "")
+
+    def test_single_char(self):
+        self.assertEqual(remove_vowels("a"), "")
+        self.assertEqual(remove_vowels("b"), "b")
+
+    def test_multiple_chars(self):
+        self.assertEqual(remove_vowels("abc"), "bcd")
+        self.assertEqual(remove_vowels("xyz"), "xyz")
+
+    def test_lowercase_letters(self):
+        self.assertEqual(remove_vowels("hello"), "hll")
+        self.assertEqual(remove_vowels("world"), "wrld")
+
+    def test_uppercase_letters(self):
+        self.assertEqual(remove_vowels("HELLO"), "HLL")
+        self.assertEqual(remove_vowels("WORLD"), "WRDL")
+
+    def test_special_characters(self):
+        self.assertEqual(remove_vowels("Hello World!"), "Hll Wrld!")
+        self.assertEqual(remove_vowels("Python Programming"), "Pythn Prgrmmng")
+
+    def test_whitespace(self):
+        self.assertEqual(remove_vowels(" "), " ")
+        self.assertEqual(remove_vowels(" "), ""), ""
+
+    def test_punctuation(self):
+        self.assertEqual(remove_vowels("Hello, world!"), "Hll, wrld!")
+        self.assertEqual(remove_vowels("Hello, world!"), "Hll, wrld!")
+
+    def test_all_caps(self):
+        self.assertEqual(remove_vowels("ALL CAPS"), "ALL CAPS")
+        self.assertEqual(remove_vowels("all caps"), "lcp")
+
+    def test_mixed_case(self):
+        self.assertEqual(remove_vowels("Mixed Case"), "Mtd Cse")
+        self.assertEqual(remove_vowels("mixed case"), "mdt cse")
+
+    def test_numbers(self):
+        self.assertEqual(remove_vowels("12345"), "12345")
+        self.assertEqual(remove_vowels("1234567890"), "1234567890")
+
+    def test_symbols(self):
+        self.assertEqual(remove_vowels("#$%&*+-/=?@!\"'[]{}|<>:"), "#$%&*+-/=?@!\"'")
+        self.assertEqual(remove_vowels("$#%&*+-/=?@!\"'", ""), "$#%&*+-/=?@!\"'")
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+This test suite covers various cases including empty strings, single characters, multiple characters, lowercase and uppercase letters, special characters, whitespace, punctuation, mixed case, numbers, and symbols. It also includes tests for both positive and negative scenarios to ensure robustness.

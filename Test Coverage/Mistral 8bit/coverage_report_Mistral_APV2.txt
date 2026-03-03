@@ -1,0 +1,308 @@
+Name                            Stmts   Miss  Cover   Missing
+-------------------------------------------------------------
+C1/HumanEval_0_code.py              9      0   100%
+C1/HumanEval_2_code.py              2      0   100%
+C1/HumanEval_3_code.py              8      0   100%
+C1/HumanEval_4_code.py              4      0   100%
+C1/HumanEval_5_code.py              8      0   100%
+C1/HumanEval_6_code.py             14      0   100%
+C1/HumanEval_7_code.py              3      0   100%
+C1/HumanEval_8_code.py              8      0   100%
+C1/HumanEval_9_code.py             10      0   100%
+C1/HumanEval_10_code.py             9      0   100%
+C1/HumanEval_11_code.py             7      0   100%
+C1/HumanEval_12_code.py             8      0   100%
+C1/HumanEval_13_code.py             4      0   100%
+C1/HumanEval_14_code.py             6      0   100%
+C1/HumanEval_15_code.py             2      0   100%
+C1/HumanEval_16_code.py             2      0   100%
+C1/HumanEval_17_code.py             4      0   100%
+C1/HumanEval_18_code.py             6      0   100%
+C1/HumanEval_19_code.py             4      0   100%
+C1/HumanEval_20_code.py            15      0   100%
+C1/HumanEval_21_code.py             5      0   100%
+C1/HumanEval_22_code.py             3      0   100%
+C1/HumanEval_23_code.py             2      0   100%
+C1/HumanEval_24_code.py             4      1    75%   8
+C1/HumanEval_26_code.py             5      0   100%
+C1/HumanEval_28_code.py             3      0   100%
+C1/HumanEval_29_code.py             3      0   100%
+C1/HumanEval_30_code.py             2      0   100%
+C1/HumanEval_33_code.py             4      0   100%
+C1/HumanEval_34_code.py             2      0   100%
+C1/HumanEval_35_code.py             6      0   100%
+C1/HumanEval_36_code.py            10      0   100%
+C1/HumanEval_37_code.py            10      0   100%
+C1/HumanEval_38_code.py             6      0   100%
+C1/HumanEval_40_code.py             7      0   100%
+C1/HumanEval_41_code.py             2      0   100%
+C1/HumanEval_42_code.py             2      0   100%
+C1/HumanEval_43_code.py             6      0   100%
+C1/HumanEval_44_code.py             6      0   100%
+C1/HumanEval_45_code.py             2      0   100%
+C1/HumanEval_46_code.py             8      0   100%
+C1/HumanEval_47_code.py             5      0   100%
+C1/HumanEval_48_code.py             5      0   100%
+C1/HumanEval_49_code.py             5      0   100%
+C1/HumanEval_50_code.py             4      0   100%
+C1/HumanEval_51_code.py             2      0   100%
+C1/HumanEval_52_code.py             5      0   100%
+C1/HumanEval_53_code.py             2      0   100%
+C1/HumanEval_54_code.py             2      0   100%
+C1/HumanEval_56_code.py             9      0   100%
+C1/HumanEval_57_code.py             4      0   100%
+C1/HumanEval_58_code.py             7      0   100%
+C1/HumanEval_59_code.py            13      1    92%   10
+C1/HumanEval_60_code.py             2      0   100%
+C1/HumanEval_61_code.py             9      0   100%
+C1/HumanEval_62_code.py             2      0   100%
+C1/HumanEval_63_code.py             8      0   100%
+C1/HumanEval_64_code.py             7      0   100%
+C1/HumanEval_65_code.py             5      0   100%
+C1/HumanEval_67_code.py             6      0   100%
+C1/HumanEval_68_code.py             7      1    86%   35
+C1/HumanEval_69_code.py             9      0   100%
+C1/HumanEval_70_code.py             7      0   100%
+C1/HumanEval_71_code.py             7      0   100%
+C1/HumanEval_72_code.py            10      0   100%
+C1/HumanEval_73_code.py             6      0   100%
+C1/HumanEval_74_code.py            10      0   100%
+C1/HumanEval_75_code.py            18      0   100%
+C1/HumanEval_76_code.py             7      0   100%
+C1/HumanEval_77_code.py             3      0   100%
+C1/HumanEval_78_code.py             7      0   100%
+C1/HumanEval_80_code.py             7      0   100%
+C1/test_HumanEval_0_test.py        19      0   100%
+C1/test_HumanEval_2_test.py        44     27    39%   19-45
+C1/test_HumanEval_3_test.py        19      0   100%
+C1/test_HumanEval_4_test.py        13      7    46%   9-15
+C1/test_HumanEval_5_test.py        18      0   100%
+C1/test_HumanEval_6_test.py        17      2    88%   12-13
+C1/test_HumanEval_7_test.py        13      0   100%
+C1/test_HumanEval_8_test.py        13      0   100%
+C1/test_HumanEval_9_test.py        15      0   100%
+C1/test_HumanEval_10_test.py       25      4    84%   20, 24, 31-32
+C1/test_HumanEval_11_test.py       10      0   100%
+C1/test_HumanEval_12_test.py       18      0   100%
+C1/test_HumanEval_13_test.py       22      6    73%   16-18, 22-23, 27
+C1/test_HumanEval_14_test.py       17      0   100%
+C1/test_HumanEval_15_test.py       13      0   100%
+C1/test_HumanEval_16_test.py       22      0   100%
+C1/test_HumanEval_17_test.py       17      1    94%   20
+C1/test_HumanEval_18_test.py       20      0   100%
+C1/test_HumanEval_19_test.py       13      1    92%   15
+C1/test_HumanEval_20_test.py       18      9    50%   12-20
+C1/test_HumanEval_21_test.py        9      2    78%   10-11
+C1/test_HumanEval_22_test.py       23      0   100%
+C1/test_HumanEval_23_test.py       19      0   100%
+C1/test_HumanEval_24_test.py       50     45    10%   8-52
+C1/test_HumanEval_26_test.py       17      0   100%
+C1/test_HumanEval_28_test.py       16      0   100%
+C1/test_HumanEval_29_test.py       13      0   100%
+C1/test_HumanEval_30_test.py       12      0   100%
+C1/test_HumanEval_33_test.py       20      3    85%   19, 23, 27
+C1/test_HumanEval_34_test.py       15      0   100%
+C1/test_HumanEval_35_test.py       13      0   100%
+C1/test_HumanEval_36_test.py       24      4    83%   24-27
+C1/test_HumanEval_37_test.py       15      2    87%   15, 20
+C1/test_HumanEval_38_test.py       23     14    39%   9-15, 20-26
+C1/test_HumanEval_40_test.py       21      1    95%   20
+C1/test_HumanEval_41_test.py        9      0   100%
+C1/test_HumanEval_42_test.py       13      0   100%
+C1/test_HumanEval_43_test.py       15      0   100%
+C1/test_HumanEval_44_test.py       14      6    57%   10-15
+C1/test_HumanEval_45_test.py       10      0   100%
+C1/test_HumanEval_46_test.py       21      9    57%   14-19, 23-25
+C1/test_HumanEval_47_test.py       14      3    79%   9-11
+C1/test_HumanEval_48_test.py       14      0   100%
+C1/test_HumanEval_49_test.py        9      0   100%
+C1/test_HumanEval_50_test.py       17      8    53%   9-12, 17-20
+C1/test_HumanEval_51_test.py       15      0   100%
+C1/test_HumanEval_52_test.py       12      0   100%
+C1/test_HumanEval_53_test.py       18      0   100%
+C1/test_HumanEval_54_test.py       10      0   100%
+C1/test_HumanEval_56_test.py       17      0   100%
+C1/test_HumanEval_57_test.py       15      0   100%
+C1/test_HumanEval_58_test.py       18      0   100%
+C1/test_HumanEval_59_test.py       23      4    83%   22-25
+C1/test_HumanEval_60_test.py       14      0   100%
+C1/test_HumanEval_61_test.py       18      1    94%   25
+C1/test_HumanEval_62_test.py       16      0   100%
+C1/test_HumanEval_63_test.py       17      0   100%
+C1/test_HumanEval_64_test.py       14      4    71%   12-15
+C1/test_HumanEval_65_test.py       21      8    62%   9-10, 18-20, 24-26
+C1/test_HumanEval_67_test.py       11      2    82%   12-13
+C1/test_HumanEval_68_test.py       22      6    73%   12, 17-19, 23-24
+C1/test_HumanEval_69_test.py       23      0   100%
+C1/test_HumanEval_70_test.py       13      0   100%
+C1/test_HumanEval_71_test.py       11      2    82%   9, 14
+C1/test_HumanEval_72_test.py       20      1    95%   24
+C1/test_HumanEval_73_test.py       14      4    71%   13-16
+C1/test_HumanEval_74_test.py       19      4    79%   23-26
+C1/test_HumanEval_75_test.py       13      7    46%   9-15
+C1/test_HumanEval_76_test.py       26      4    85%   26-29
+C1/test_HumanEval_77_test.py       20      7    65%   15-21
+C1/test_HumanEval_78_test.py       17      3    82%   12-14
+C1/test_HumanEval_80_test.py       40      0   100%
+C2/HumanEval_82_code.py             8      0   100%
+C2/HumanEval_83_code.py             4      0   100%
+C2/HumanEval_84_code.py             2      0   100%
+C2/HumanEval_85_code.py             2      0   100%
+C2/HumanEval_86_code.py             2      0   100%
+C2/HumanEval_87_code.py             3      0   100%
+C2/HumanEval_88_code.py             2      0   100%
+C2/HumanEval_90_code.py             3      0   100%
+C2/HumanEval_91_code.py             4      0   100%
+C2/HumanEval_92_code.py             6      0   100%
+C2/HumanEval_93_code.py             5      0   100%
+C2/HumanEval_94_code.py            14      0   100%
+C2/HumanEval_95_code.py            19      0   100%
+C2/HumanEval_96_code.py            11      0   100%
+C2/HumanEval_97_code.py             2      0   100%
+C2/HumanEval_98_code.py             6      0   100%
+C2/HumanEval_99_code.py             7      0   100%
+C2/HumanEval_100_code.py            2      0   100%
+C2/HumanEval_102_code.py            8      1    88%   16
+C2/HumanEval_103_code.py            7      0   100%
+C2/HumanEval_104_code.py            6      0   100%
+C2/HumanEval_105_code.py           10      0   100%
+C2/HumanEval_106_code.py           13      0   100%
+C2/HumanEval_107_code.py           11      0   100%
+C2/HumanEval_108_code.py            9      0   100%
+C2/HumanEval_109_code.py           12      0   100%
+C2/HumanEval_110_code.py           12      0   100%
+C2/HumanEval_111_code.py           12      0   100%
+C2/HumanEval_112_code.py            3      0   100%
+C2/HumanEval_113_code.py            6      0   100%
+C2/HumanEval_114_code.py           12      0   100%
+C2/HumanEval_115_code.py            3      0   100%
+C2/HumanEval_116_code.py            2      0   100%
+C2/HumanEval_117_code.py           10      0   100%
+C2/HumanEval_118_code.py            9      0   100%
+C2/HumanEval_120_code.py            6      1    83%   27
+C2/HumanEval_121_code.py            2      0   100%
+C2/HumanEval_122_code.py            2      0   100%
+C2/HumanEval_123_code.py           11      0   100%
+C2/HumanEval_124_code.py           16      1    94%   26
+C2/HumanEval_125_code.py            6      0   100%
+C2/HumanEval_126_code.py            9      0   100%
+C2/HumanEval_127_code.py           16      4    75%   25-28
+C2/HumanEval_128_code.py            5      0   100%
+C2/HumanEval_129_code.py           22      0   100%
+C2/HumanEval_130_code.py            9      0   100%
+C2/HumanEval_131_code.py           11      0   100%
+C2/HumanEval_132_code.py           16      0   100%
+C2/HumanEval_133_code.py            6      0   100%
+C2/HumanEval_134_code.py            3      0   100%
+C2/HumanEval_135_code.py            8      0   100%
+C2/HumanEval_136_code.py            4      0   100%
+C2/HumanEval_137_code.py            9      0   100%
+C2/HumanEval_138_code.py            2      0   100%
+C2/HumanEval_139_code.py            7      0   100%
+C2/HumanEval_140_code.py           19      1    95%   28
+C2/HumanEval_141_code.py           15      4    73%   18, 20, 22, 27
+C2/HumanEval_142_code.py            9      0   100%
+C2/HumanEval_143_code.py           12      0   100%
+C2/HumanEval_144_code.py            8      0   100%
+C2/HumanEval_145_code.py            9      0   100%
+C2/HumanEval_146_code.py            9      0   100%
+C2/HumanEval_147_code.py            9      0   100%
+C2/HumanEval_148_code.py            9      0   100%
+C2/HumanEval_149_code.py            7      0   100%
+C2/HumanEval_150_code.py            7      0   100%
+C2/HumanEval_151_code.py            2      0   100%
+C2/HumanEval_152_code.py            2      0   100%
+C2/HumanEval_153_code.py           10      0   100%
+C2/HumanEval_154_code.py            8      0   100%
+C2/HumanEval_155_code.py            8      0   100%
+C2/HumanEval_156_code.py           13      0   100%
+C2/HumanEval_157_code.py            2      0   100%
+C2/HumanEval_158_code.py            2      0   100%
+C2/HumanEval_159_code.py            4      0   100%
+C2/HumanEval_160_code.py            5      0   100%
+C2/HumanEval_161_code.py           12      0   100%
+C2/HumanEval_162_code.py            3      0   100%
+C2/HumanEval_163_code.py            4      0   100%
+C2/test_HumanEval_81_test.py       21     19    10%   4-25
+C2/test_HumanEval_82_test.py       27      0   100%
+C2/test_HumanEval_83_test.py       13      0   100%
+C2/test_HumanEval_84_test.py       20     10    50%   12-21
+C2/test_HumanEval_85_test.py       14      8    43%   8-15
+C2/test_HumanEval_86_test.py       21      5    76%   17, 21-22, 26-27
+C2/test_HumanEval_87_test.py       13      0   100%
+C2/test_HumanEval_88_test.py       15      0   100%
+C2/test_HumanEval_90_test.py       18      1    94%   24
+C2/test_HumanEval_91_test.py       20      4    80%   20-21, 25-26
+C2/test_HumanEval_92_test.py       14      0   100%
+C2/test_HumanEval_93_test.py       19      2    89%   16, 20
+C2/test_HumanEval_94_test.py       15      0   100%
+C2/test_HumanEval_95_test.py       15      0   100%
+C2/test_HumanEval_96_test.py       17      0   100%
+C2/test_HumanEval_97_test.py       14      0   100%
+C2/test_HumanEval_98_test.py       13      3    77%   13-15
+C2/test_HumanEval_99_test.py       25      2    92%   23-24
+C2/test_HumanEval_100_test.py      14      0   100%
+C2/test_HumanEval_101_test.py      17     15    12%   4-25
+C2/test_HumanEval_102_test.py      19      4    79%   13-14, 23-24
+C2/test_HumanEval_103_test.py      24      8    67%   12-16, 23, 27-28
+C2/test_HumanEval_104_test.py      14      2    86%   17-18
+C2/test_HumanEval_105_test.py      16      2    88%   19-20
+C2/test_HumanEval_106_test.py      17      4    76%   14-15, 19-20
+C2/test_HumanEval_107_test.py      20     14    30%   9-22
+C2/test_HumanEval_108_test.py      15      0   100%
+C2/test_HumanEval_109_test.py      15      0   100%
+C2/test_HumanEval_110_test.py      15      1    93%   14
+C2/test_HumanEval_111_test.py      20      1    95%   26
+C2/test_HumanEval_112_test.py      19      5    74%   13-15, 21-22
+C2/test_HumanEval_113_test.py      15      0   100%
+C2/test_HumanEval_114_test.py      14      4    71%   13-16
+C2/test_HumanEval_115_test.py      28      0   100%
+C2/test_HumanEval_116_test.py      11      6    45%   8-13
+C2/test_HumanEval_117_test.py      15      0   100%
+C2/test_HumanEval_118_test.py      24     14    42%   13-26
+C2/test_HumanEval_120_test.py      24      0   100%
+C2/test_HumanEval_121_test.py      23      0   100%
+C2/test_HumanEval_122_test.py      12      6    50%   9-14
+C2/test_HumanEval_123_test.py      19      0   100%
+C2/test_HumanEval_124_test.py      27      6    78%   12-13, 24-27
+C2/test_HumanEval_125_test.py      27      6    78%   17, 30-34
+C2/test_HumanEval_126_test.py      20      0   100%
+C2/test_HumanEval_127_test.py      14      0   100%
+C2/test_HumanEval_128_test.py      15      2    87%   18-19
+C2/test_HumanEval_129_test.py      38      0   100%
+C2/test_HumanEval_130_test.py      19      0   100%
+C2/test_HumanEval_131_test.py      17      0   100%
+C2/test_HumanEval_132_test.py      13      0   100%
+C2/test_HumanEval_133_test.py      16      0   100%
+C2/test_HumanEval_134_test.py      21      0   100%
+C2/test_HumanEval_135_test.py      13      0   100%
+C2/test_HumanEval_136_test.py      13      0   100%
+C2/test_HumanEval_137_test.py      23      2    91%   18-19
+C2/test_HumanEval_138_test.py      12      0   100%
+C2/test_HumanEval_139_test.py      36     25    31%   12-18, 24-41
+C2/test_HumanEval_140_test.py      19      2    89%   19, 24
+C2/test_HumanEval_141_test.py      29     16    45%   17-32
+C2/test_HumanEval_142_test.py      15      0   100%
+C2/test_HumanEval_143_test.py       9      2    78%   10-11
+C2/test_HumanEval_144_test.py      14      5    64%   12-16
+C2/test_HumanEval_145_test.py      19      1    95%   17
+C2/test_HumanEval_146_test.py      19      5    74%   11-15
+C2/test_HumanEval_147_test.py      19     11    42%   11-21
+C2/test_HumanEval_148_test.py      14      1    93%   9
+C2/test_HumanEval_149_test.py      18      0   100%
+C2/test_HumanEval_150_test.py      12      1    92%   14
+C2/test_HumanEval_151_test.py      23      2    91%   11, 19
+C2/test_HumanEval_152_test.py      15      1    93%   19
+C2/test_HumanEval_153_test.py      13      0   100%
+C2/test_HumanEval_154_test.py      11      0   100%
+C2/test_HumanEval_155_test.py      12      5    58%   10-14
+C2/test_HumanEval_156_test.py      35     11    69%   27-37
+C2/test_HumanEval_157_test.py      12      2    83%   13-14
+C2/test_HumanEval_158_test.py      15      5    67%   13-17
+C2/test_HumanEval_159_test.py       9      0   100%
+C2/test_HumanEval_160_test.py      21      5    76%   10, 15-16, 25-26
+C2/test_HumanEval_161_test.py      23      2    91%   21-22
+C2/test_HumanEval_162_test.py      12      0   100%
+C2/test_HumanEval_163_test.py      17      3    82%   12-14
+-------------------------------------------------------------
+TOTAL                            3758    487    87%

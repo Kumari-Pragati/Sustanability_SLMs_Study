@@ -1,0 +1,54 @@
+system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.
+user
+Generate a unittest test script for the following Python function.
+The script should fully test the function and be runnable directly.
+
+### Output Formatting
+1. Start with: import unittest
+2. Include: from HumanEval_17_code import parse_music
+3. End with:
+if __name__ == '__main__':
+    unittest.main()
+
+Function:
+from typing import List
+
+
+def parse_music(music_string: str) -> List[int]:
+    """Input to this function is a string representing musical notes in a special ASCII format.
+    Your task is to parse this string and return a list of integers corresponding to how many beats each note lasts.
+
+    Legend:
+    'o'  - whole note, lasts four beats
+    'o|' - half note, lasts two beats
+    '.|' - quarter note, lasts one beat
+
+    >>> parse_music('o o| .| o| o| .| .| .| .| o o')
+    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
+    """
+    note_map = {'o': 4, 'o|': 2, '.|': 1}
+    return [note_map[x] for x in music_string.split(' ') if x]
+
+
+assistant
+
+import unittest
+
+# Importing the function from the given code snippet
+from HumanEval_17_code import parse_music
+
+class TestParseMusic(unittest.TestCase):
+    def test_parse_music(self):
+        # Test case 1
+        input_str1 = 'o o| .| o| o| .| .| .| .| o o'
+        expected_output1 = [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
+        self.assertEqual(parse_music(input_str1), expected_output1)
+
+        # Test case 2
+        input_str2 = '|| | || | '
+        expected_output2 = [0, 0, 0, 0]
+        self.assertEqual(parse_music(input_str2), expected_output2)
+
+        # Test case 3
+        input_str3 = 'oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo|oo
