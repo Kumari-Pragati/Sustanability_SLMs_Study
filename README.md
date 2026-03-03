@@ -185,7 +185,8 @@ Replace with:
 load_in_4bit=True
 bnb_4bit_quant_type="nf4"
 bnb_4bit_use_double_quant=True
-Full Precision (No Quantization)
+
+Full Precision (No Quantization):
 
 Remove quantization configuration entirely: AutoModelForCausalLM.from_pretrained(MODEL_ID)
 
